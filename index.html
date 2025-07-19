@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>safety-watch-alert-now</title>
+    <meta name="description" content="Lovable Generated Project" />
+    <meta name="author" content="Lovable" />
+
+    <meta property="og:title" content="safety-watch-alert-now" />
+    <meta property="og:description" content="Lovable Generated Project" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@lovable_dev" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAPS AID - Community Safety Network</title>
+    <link rel ="stylesheet" href="style.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <div class="header-info">
+                    <div class="logo">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="title-section">
+                        <h1>SAPS AID</h1>
+                        <p>The police response catalyst.</p>
+                    </div>
+                </div>
+                <button class="emergency-btn" onclick="window.location.href='tel:10111'">
+                    <i class="fas fa-phone"></i>
+                    Emergency
+                </button>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-number">18</div>
+                    <div class="stat-label">Criminal activies commited everyday.</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1.2K</div>
+                    <div class="stat-label">Community</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">recommendations</div>
+                    <div class="stat-label">recommend this application to a friend to keep them safe.</div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="nav-tabs">
+            <button class="nav-tab active" data-tab="alerts">
+                <i class="fas fa-exclamation-triangle"></i>
+                <span>Heat Map</span>
+            </button>
+            <button class="nav-tab" data-tab="report">
+                <i class="fas fa-camera"></i>
+                <span>Report</span>
+            </button>
+            <button class="nav-tab" data-tab="map">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Police Stations</span>
+            </button>
+            <button class="nav-tab" data-tab="contacts">
+                <i class="fas fa-phone-alt"></i>
+                <span>Help</span>
+            </button>
+        </nav>
+
+        <!-- Content Sections -->
+        <main class="main-content">
+            <!-- Live Alerts Tab -->
+            <section id="alerts" class="tab-content active">
+                <div class="section-header">
+                    //space for use
+                    <span class="live-badge">
+                    
+                      //space for use
+                    </span>
+                </div>
+
+                <div class="alerts-list">
+                    <div class="alert-card high-severity">
+                        <div class="alert-header">
+                            <div class="alert-info">
+                                
+                                <div class="alert-details">
+                                    
+                                    
+                                </div>
+                            </div>
+                        
+                        </div>
+                      
+                        <div class="alert-footer">
+                            <div class="alert-meta">
+                               
+                            </div>
+                            <div class="alert-actions">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="alert-card high-severity"
+
+                    
+                        <div class="alert-header">
+                            <div class="alert-info">
+                                
+                                <div class="alert-details">
+                                   
+                                    <div class="location-info">
+                                       
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                          
+                        </div>
+                        
+                        <div class="alert-footer">
+                            <div class="alert-meta">
+                               
+                            </div>
+                            <div class="alert-actions">
+                              
+                        </div>
+                    </div>
+                </div>
+
+                <div class="safety-tip">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <div>
+                        <h3>Stay Alert, Stay Safe</h3>
+                        <p>Report suspicious activities immediately to help keep your community safe.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Report Incident Tab -->
+            <section id="report" class="tab-content">
+                <div class="section-header">
+                    <h2>Report Incident</h2>
+                    <button class="emergency-btn small" onclick="window.location.href='tel:10111'">
+                        <i class="fas fa-phone"></i>
+                        Emergency
+                    </button>
+                </div>
+
+                <form class="report-form">
+                    <!-- Urgency Toggle -->
+                    <div class="urgency-card" id="urgencyCard">
+                        <div class="urgency-content">
+                            <div class="urgency-info">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <div>
+                                    <h3>Urgent Incident</h3>
+                                    <p>Requires immediate attention</p>
+                                </div>
+                            </div>
+                            <button type="button" class="urgency-toggle" id="urgencyToggle">Normal</button>
+                        </div>
+                    </div>
+
+                    <!-- Incident Type Selection -->
+                    <div class="form-section">
+                        <h3>Select Incident Type *</h3>
+                        <div class="incident-types">
+                            <button type="button" class="incident-btn" data-type="robbery">
+                                <i class="fas fa-shopping-bag"></i>
+                                <span>Robbery/Theft</span>
+                            </button>
+                            <button type="button" class="incident-btn" data-type="hijacking">
+                                <i class="fas fa-car"></i>
+                                <span>Hijacking</span>
+                            </button>
+                            <button type="button" class="incident-btn" data-type="breakin">
+                                <i class="fas fa-home"></i>
+                                <span>Break-in</span>
+                            </button>
+                            <button type="button" class="incident-btn" data-type="assault">
+                                <i class="fas fa-users"></i>
+                                <span>Assault</span>
+                            </button>
+                            <button type="button" class="incident-btn" data-type="suspicious">
+                                <i class="fas fa-eye"></i>
+                                <span>Suspicious Activity</span>
+                            </button>
+                            <button type="button" class="incident-btn" data-type="other">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <span>Other Crime</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="form-section">
+                        <h3>Location *</h3>
+                        <div class="location-input">
+                            <input type="text" id="locationInput" placeholder="Enter location or address" required>
+                            <button type="button" class="location-btn" id="getLocationBtn">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <div class="form-section">
+                        <h3>Description *</h3>
+                        <textarea id="descriptionInput" placeholder="Describe what happened, include details like number of suspects, direction they went, vehicle descriptions, etc." required></textarea>
+                    </div>
+
+                    <!-- Media Upload -->
+                    <div class="form-section">
+                        <h3>Evidence (Optional)</h3>
+                        <div class="media-buttons">
+                            <button type="button" class="media-btn">
+                                <i class="fas fa-camera"></i>
+                                <span>Take Photo</span>
+                            </button>
+                            <button type="button" class="media-btn">
+                                <i class="fas fa-video"></i>
+                                <span>Record Video</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <i class="fas fa-paper-plane"></i>
+                        Submit Report
+                    </button>
+                </form>
+
+                <p class="disclaimer">Your report will be sent to SAPS and shared with the community to help keep everyone safe.</p>
+            </section>
+
+            <!-- Safety Map Tab -->
+            <section id="map" class="tab-content">
+                <div class="section-header">
+                    <h2>Safety Map</h2>
+                    
+                </div>
+
+                <div class="map-container">
+                    <div class="map-placeholder">
+                       
+                        /// space for
+                        
+                    </div>
+                </div>
+
+                <!-- Area Info Card -->
+                <div class="area-info-card" id="areaInfoCard" style="display: none;">
+                    <div class="area-info-header">
+                        <h3 id="areaName"></h3>
+                        <span class="severity-badge" id="areaRisk"></span>
+                    </div>
+                    <div class="area-stats">
+                        <div>Active Incidents: <strong id="areaIncidents"></strong></div>
+                        <div>Last Incident: <strong id="areaLastIncident"></strong></div>
+                    </div>
+                </div>
+
+                <div class="safety-tip">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <h3>Safety Tips</h3>
+                        <ul>
+                            <li>Stay alert in high-risk areas (red markers)</li>
+                            <li>Travel in groups when possible</li>
+                            <li>Report suspicious activities immediately</li>
+                            <li>Keep emergency contacts handy</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Emergency Contacts Tab -->
+            <section id="contacts" class="tab-content">
+                <div class="section-header">
+                    <h2>Emergency Help</h2>
+                    <span class="availability-badge">
+                        <i class="fas fa-phone"></i>
+                        24/7 Available
+                    </span>
+                </div>
+
+                <!-- Emergency Services -->
+                <div class="emergency-services">
+                    <button class="service-btn police" onclick="window.location.href='tel:10111'">
+                        <i class="fas fa-shield-alt"></i>
+                        <div>
+                            <div class="service-name">SAPS Emergency</div>
+                            <div class="service-number">10111</div>
+                        </div>
+                    </button>
+                    <button class="service-btn medical" onclick="window.location.href='tel:10177'">
+                        <i class="fas fa-heart"></i>
+                        <div>
+                            <div class="service-name">Medical Emergency</div>
+                            <div class="service-number">10177</div>
+                        </div>
+                    </button>
+                    <button class="service-btn fire" onclick="window.location.href='tel:10111'">
+                        <i class="fas fa-fire"></i>
+                        <div>
+                            <div class="service-name">Fire Department</div>
+                            <div class="service-number">10111</div>
+                        </div>
+                    </button>
+                    <button class="service-btn crime-stop" onclick="window.location.href='tel:08600-10111'">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <div class="service-name">Crime Stop</div>
+                            <div class="service-number">08600-10111</div>
+                        </div>
+                    </button>
+                </div>
+
+                <!-- Police Stations -->
+                <div class="form-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Nearest Police Stations</h3>
+                    <div class="stations-list">
+                        <div class="station-card">
+                            <div class="station-info">
+                                <h4>Sandton Police Station</h4>
+                                <p>141 West Street, Sandton</p>
+                                <div class="station-meta">
+                                    <span class="status-badge open">Open</span>
+                                    <span class="distance">1.2km</span>
+                                </div>
+                            </div>
+                            <div class="station-actions">
+                                <button class="btn-outline" onclick="window.location.href='tel:011-699-1300'">
+                                    <i class="fas fa-phone"></i> Call
+                                </button>
+                                <button class="btn-outline">
+                                    <i class="fas fa-map-marker-alt"></i> Directions
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="station-card">
+                            <div class="station-info">
+                                <h4>Rosebank Police Station</h4>
+                                <p>187 Jan Smuts Ave, Rosebank</p>
+                                <div class="station-meta">
+                                    <span class="status-badge open">Open</span>
+                                    <span class="distance">2.8km</span>
+                                </div>
+                            </div>
+                            <div class="station-actions">
+                                <button class="btn-outline" onclick="window.location.href='tel:011-447-2600'">
+                                    <i class="fas fa-phone"></i> Call
+                                </button>
+                                <button class="btn-outline">
+                                    <i class="fas fa-map-marker-alt"></i> Directions
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Safety Tips -->
+                <div class="safety-tip warning">
+                    <i class="fas fa-info-circle"></i>
+                    <div>
+                        <h3>Emergency Call Tips</h3>
+                        <ul>
+                            <li>Always stay calm during emergencies</li>
+                            <li>Provide clear location information when calling</li>
+                            <li>Never hang up until told to do so</li>
+                            <li>Keep your phone charged and accessible</li>
+                            <li>Know your exact address and landmarks nearby</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Floating Action Button -->
+        <button class="fab" id="fabBtn">
+            <i class="fas fa-exclamation-circle"></i>
+        </button>
+
+        <!-- Toast Notification -->
+        <div class="toast" id="toast">
+            <div class="toast-content">
+                <i class="fas fa-check-circle"></i>
+                <span id="toastMessage"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
