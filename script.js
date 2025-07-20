@@ -9,10 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
       tabs.forEach(t => t.classList.remove("active"));
       tabContents.forEach(tc => tc.classList.remove("active"));
 
-      // Add 'active' to the clicked tab and the corresponding content
-      tab.classList.add("active");
-      const tabName = tab.getAttribute("data-tab");
-      document.getElementById(tabName).classList.add("active");
+      // Add 'active' to the clicked tab and  the corresponding content
+          tab.classList.add("active");
+          const tabName = tab.getAttribute("data-tab");
+          document.getElementById(tabName).classList.add("active");
     });
   });
 });
